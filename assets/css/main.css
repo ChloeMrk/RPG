@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+}
+
+.joueur {
+  width: 20em;
+  height: 25em;
+  border: 2px solid black;
+}
+
+.joueurCar {
+  width: 20em;
+  height: 25em;
+  border: 3px solid black;
+  position: absolute;
+  top: 25em;
+  right: 40%;
+  display: none;
+}
+
+.historique {
+  width: 50%;
+  height: 10em;
+  border: 3px solid #7fffd4;
+  position: absolute;
+  bottom: 0px;
+  right: 0%;
+  background-color: white;
+}
+
+.choixCombat {
+  width: 49%;
+  height: 10em;
+  border: 3px solid #ff3333;
+  position: absolute;
+  bottom: 0px;
+}
+
+.adversaire {
+  width: 25em;
+  height: 25em;
+  border: 2px solid black;
+  position: absolute;
+  top: 10em;
+  right: 40%;
+  background-color: white;
+}
+
+.amelioration {
+  width: 20em;
+  height: 16em;
+  border: 2px solid black;
+  position: absolute;
+  right: 1%;
+}
+
+h2 {
+  text-align: center;
+  border-bottom: solid 2px black;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+.btn {
+  width: 32.2%;
+  height: 75%;
+  /* Mettre la police en gras */
+  font-weight: bold;
+  font-size: large;
+}
+
+.bouttons {
+  display: inline;
+  margin: 1%;
+}
