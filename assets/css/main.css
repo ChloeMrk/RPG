@@ -16,7 +16,6 @@ body {
   position: absolute;
   top: 25em;
   right: 40%;
-  display: none;
 }
 
 .historique {
@@ -66,11 +65,25 @@ h2 {
   width: 32.2%;
   height: 75%;
   /* Mettre la police en gras */
-  font-weight: bold;
+  font-weight: 400;
   font-size: large;
 }
 
 .bouttons {
   display: inline;
   margin: 1%;
+}
+
+.bg-red {
+  background-color: red;
+  color: white;
+}
+
+.none {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }

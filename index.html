@@ -14,27 +14,35 @@
     </header>
     <div class="joueur">
       <h2>Joueur</h2>
+      <a href="" id="Joueur">Afficher les caractéristiques</a>
+      <div class="listCar"></div>
     </div>
 
     <main>
-      <div class="joueurCar"></div>
+      <div class="joueurCar none" id="car"></div>
       <div class="adversaire">
         <h2>Adversaire</h2>
       </div>
     </main>
 
     <footer>
+      <!-- HISTORIQUE DES ACTIONS -->
       <div class="historique">
         <h2>Historique</h2>
       </div>
+      <!-- ON CHOISIT l'ACTION DU JOUEUR -->
       <div class="choixCombat">
         <h2>Choix</h2>
+        <!-- NOS BOUTONS  -->
         <div class="bouttons">
-          <button class="btn">ATTAQUE</button>
+          <button class="btn bg-red" id="atq">ATTAQUE</button>
           <button class="btn">SORT</button>
           <button class="btn">DÉFENSE</button>
         </div>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module" src="assets/js/person.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
