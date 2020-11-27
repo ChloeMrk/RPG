@@ -1,2 +1,2 @@
 # RPG
-RPG avec  GOMES VITORINO Marvin STAILI Sofiane HOIZEY Evan MERCK Chloé
+RPG avec  GOMES VITORINO Marvin STAILI Sofiane HOIZEY Evan PANNETRAT Mathieu MERCK Chloé
