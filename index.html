@@ -7,24 +7,79 @@
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
-    <header>
-      <div class="amelioration">
-        <h2>Amélioration</h2>
+    <div>
+      <header>
+        <div class="amelioration">
+          <h2>Amélioration</h2>
+        </div>
+      </header>
+      <div class="joueur">
+        <h2 class="pointer" id="Joueur">Joueur</h2>
+        <div class="listCar">
+          <div>
+            <h4>Nom :</h4>
+          </div>
+          <div class="playerCar">
+            <img
+              src="assets/img/heart.svg"
+              alt=""
+              srcset=""
+              class="playerImg"
+            />
+            <h4 class="numberPlayerHp">500</h4>
+          </div>
+          <div class="playerCar">
+            <img
+              src="assets/img/shield.svg"
+              alt="Image Bouclier"
+              srcset=""
+              class="playerImg"
+            />
+            <h4 class="numberPlayerShield">500</h4>
+          </div>
+          <div class="playerCar">
+            <img
+              src="assets/img/flask.svg"
+              alt="Image Fiole"
+              srcset=""
+              class="playerImg"
+            />
+            <h4 class="numberPlayerMana">500</h4>
+          </div>
+          <div class="playerCar">
+            <img
+              src="assets/img/ingot.svg"
+              alt="Image Gold"
+              srcset=""
+              class="playerImg"
+            />
+            <h4 class="numberPlayerGold">500</h4>
+          </div>
+        </div>
       </div>
-    </header>
-    <div class="joueur">
-      <h2>Joueur</h2>
-      <a href="" id="Joueur">Afficher les caractéristiques</a>
-      <div class="listCar"></div>
+
+      <main>
+        <div class="joueurCar none" id="car"></div>
+        <div class="adversaire">
+          <div
+            style="
+              width: 100%;
+              height: 0;
+              padding-bottom: 54%;
+              position: relative;
+            "
+          >
+            <h2 class="adversaireTitle">Adversaire</h2>
+            <img
+              src="https://media.giphy.com/media/3o6wrdG8vt4X86Pauc/giphy.gif"
+              alt=""
+              srcset=""
+              style="width: 100%"
+            />
+          </div>
+        </div>
+      </main>
     </div>
-
-    <main>
-      <div class="joueurCar none" id="car"></div>
-      <div class="adversaire">
-        <h2>Adversaire</h2>
-      </div>
-    </main>
-
     <footer>
       <!-- HISTORIQUE DES ACTIONS -->
       <div class="historique">
@@ -41,9 +96,10 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="assets/js/person.js"></script>
+    <script type="module" src="assets/js/sauvegarde.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!--<script type="module" src="assets/js/person.js"></script>-->
-    <script type="modul" src="assets/js/main.js"></script>
-    <script src="assets/js/sauvegarde.js"></script>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
