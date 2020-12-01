@@ -1,4 +1,4 @@
-const { default: Person } = require("./person");
+import { default as Person } from "person";
 
 $("#Joueur").click(function (e) {
   e.preventDefault();
