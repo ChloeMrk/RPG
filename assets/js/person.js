@@ -22,4 +22,4 @@ class Person {
   }
 }
 
-export default Person;
+const Marvin = new Person("Marvin", 6, 6, 6, 6, 6, 6);

@@ -1,4 +1,4 @@
-import Person from "./person.js";
+import "./person.js";
 
 $("#Joueur").click(function (e) {
   e.preventDefault();
@@ -9,7 +9,5 @@ $("#Joueur").click(function (e) {
   $(".adversaireTitle").toggleClass("noneDisplay");
 });
 
-let Personne = new Person("Marvin", 1, 2, 3, 4, 5, 6);
-
-$(".numberPlayerShield").html(Personne.defense);
-$(".playerName").html("Nom : " + Personne.nom);
+console.log(Marvin.name);
+console.log(Tigre.nom);
