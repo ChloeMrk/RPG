@@ -26,7 +26,7 @@
               srcset=""
               class="playerImg"
             />
-            <h4 class="numberPlayerHp">500</h4>
+            <h4 class="numberPlayerHp"></h4>
           </div>
           <div class="playerCar">
             <img
@@ -35,7 +35,7 @@
               srcset=""
               class="playerImg"
             />
-            <h4 class="numberPlayerShield">500</h4>
+            <h4 class="numberPlayerShield"></h4>
           </div>
           <div class="playerCar">
             <img
@@ -44,7 +44,7 @@
               srcset=""
               class="playerImg"
             />
-            <h4 class="numberPlayerMana">500</h4>
+            <h4 class="numberPlayerMana"></h4>
           </div>
           <div class="playerCar">
             <img
@@ -53,13 +53,51 @@
               srcset=""
               class="playerImg"
             />
-            <h4 class="numberPlayerGold">500</h4>
+            <h4 class="numberPlayerGold"></h4>
           </div>
         </div>
       </div>
 
       <main>
-        <div class="joueurCar none" id="car"></div>
+        <!-- AFFICHE LES CARACTERISTIQUES DU JOUEUR LORSQU'ON CLIQUE SUR SON NOM -->
+        <div class="joueurCar none" id="car">
+          <div class="playerCar">
+            <img
+              src="assets/img/heart.svg"
+              alt=""
+              srcset=""
+              class="playerImg"
+            />
+            <h4 class="numberPlayerHp"></h4>
+          </div>
+          <div class="playerCar">
+            <img
+              src="assets/img/shield.svg"
+              alt="Image Bouclier"
+              srcset=""
+              class="playerImg"
+            />
+            <h4 class="numberPlayerShield"></h4>
+          </div>
+          <div class="playerCar">
+            <img
+              src="assets/img/flask.svg"
+              alt="Image Fiole"
+              srcset=""
+              class="playerImg"
+            />
+            <h4 class="numberPlayerMana"></h4>
+          </div>
+          <div class="playerCar">
+            <img
+              src="assets/img/ingot.svg"
+              alt="Image Gold"
+              srcset=""
+              class="playerImg"
+            />
+            <h4 class="numberPlayerGold"></h4>
+          </div>
+        </div>
         <div class="adversaire">
           <div
             style="
@@ -85,6 +123,7 @@
       <!-- HISTORIQUE DES ACTIONS -->
       <div class="historique">
         <h2>Historique</h2>
+        <div id="historique"></div>
       </div>
       <!-- ON CHOISIT l'ACTION DU JOUEUR -->
       <div class="choixCombat">

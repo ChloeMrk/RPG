@@ -1,13 +1,15 @@
 // Generateur joueur - Evan
 class Person {
-  constructor(nom, pv, defense, atk, vitesse, crit, esq) {
+  constructor(nom, pv, mana, defense, atk, vitesse, crit, esq, gold) {
     this.nom = nom;
     this.pv = pv;
+    this.mana = mana;
     this.defense = defense;
     this.atk = atk;
     this.vitesse = vitesse;
     this.crit = crit;
     this.esq = esq;
+    this.gold = gold;
   }
 
   //Ajouter les 3 classes de personnages (guerrier, voleur, mage) > Evan
@@ -22,4 +24,4 @@ class Person {
   }
 }
 
-const Marvin = new Person("Marvin", 6, 6, 6, 6, 6, 6);
+export default Person;
