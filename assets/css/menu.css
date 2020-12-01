@@ -68,3 +68,7 @@ p {
   top: 50%;
   left: 50%;
 }
+
+#myPopup {
+  top: 20em;
+}
