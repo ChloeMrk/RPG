@@ -1,6 +1,6 @@
 const { type } = require("os");
 
-function loot(name, price, value ) { //constructeur loot (parent) / Mathieu
+function loot(nom, price, value ) { //constructeur loot (parent) / Mathieu
     this.nom = nom;
     this.price=price;
     this.value = value;
