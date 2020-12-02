@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Mon prototype de fonctions pour le jeu RPG</title>
+		<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+		<div id="healthBars">
+			<div display: inline-block>PV Joueur </div><div id="playerHealth"><div id="playerHealthBar"></div></div>
+			<div display: inline-block>PV ennemi</div><div id="enemyHealth"><div id="enemyHealthBar"></div></div>
+		</div>
+		</br>
+		<canvas id="display"></canvas>
+		</br>
+		<button id="attack" hidden="false" onClick="fight(id)">Attaquer</button>
+		<button id="counter" hidden="false" onClick="fight(id)">Contrer</button>
+		<button id="freeze" hidden="false" onClick="fight(id)">Freeze ! </button>
+		<button id="block" hidden="false" onClick="fight(id)">Blocage</button>
+		<button id="ignite" hidden="false" onClick="fight(id)">Ignition</button>
+		<div id= "space" style='display:inline-block; opacity:.00001'> ______________________________________________</div>
+		<button id="finishingblow" hidden="false" onClick="fight(id)">Coup Final</button>
+		
+		
+		</br>
+		<div>Historique du round:</div>
+		<div id="announcements"></div>
+		
+	<script src="js/fight.js"></script>
+	<script src="js/display.js"></script>
+	<script src="js/audio.js"></script>
+</body>
+</html>
