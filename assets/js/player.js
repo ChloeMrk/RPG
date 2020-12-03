@@ -6,17 +6,17 @@ class player{
         var person;                             // variable servant de constructeur
 
         if(choice.type == 'mage') {
-            person = new mage(settings.name);   //  constructeur
+            person = new mage();   //  constructeur
         }
 
         else if(choice.type == 'voleur') {
-            person = new voleur(settings.name);
+            person = new voleur();
         }
 
         else if(choice.type == 'guerrier') {
-            person = new guerrier(settings.name);
+            person = new guerrier();
         }
-
+        critic = 1;
         return person;                          // renvoie les caractéristiques de la classe sélectionnée (les classes sont dessous)
     }
 
@@ -27,14 +27,15 @@ class mage extends player{                      // classe correspondant au type 
     speed = 100;                                // vitesse initiale du joueur
     mana = 100;                                 // points de mana par défaut
     defense = 75;                               // points de défense de base (si defense >= hp alors la défense diminue au lieu des pv)
-}
+    atk = 100;
+  }
 
 class voleur extends player{
     hp = 75;
     speed = 150;
     mana = 75;
     defense = 50;
-    
+    atk = 75;
 }
 
 class guerrier extends player{
@@ -42,6 +43,7 @@ class guerrier extends player{
     speed = 50;
     mana = 75;
     defense = 150;
+    atk = 150;
 }
 
 var name = formulaire.name.value;               // renvoie le nom entré par l'utilisateur dans le formulaire
