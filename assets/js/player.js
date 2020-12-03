@@ -1,7 +1,6 @@
 class player{
     // déclaration des variables dans un constructeur
     constructor(hp, atk, def, speed, mana, gold, critic);
-
     // redirection vers la classe (nommée type pour éviter des soucis de nommage) choisie par l'utilisateur
     static typeSelector(choice) {
         var person;                             // variable servant de constructeur

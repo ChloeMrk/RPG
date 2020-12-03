@@ -1,138 +1,36 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projet RPG</title>
-    <link rel="stylesheet" href="assets/css/main.css" />
-  </head>
-  <body>
-    <div class="typePlayer"></div>
-    <div class="game">
-      <header>
-        <div class="amelioration">
-          <h2>Amélioration</h2>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG</title>
+    <link rel="stylesheet" href="assets\css\main.css">
+</head>
+<body>
+    <div class="typePlayer">
+        <h2>Choissisez votre Classe</h2>
+        <div class="guerrier">
+          <div class="imgGuerrier">
+            <img src="assets\img\classePlayer\guerrier.png" alt="" srcset="" />
+          </div>
+          <h4 class="classTitle">Guerrier</h2>
         </div>
-      </header>
-      <div class="joueur">
-        <h2 class="pointer" id="Joueur">Joueur</h2>
-        <div class="listCar">
-          <div>
-            <h4 class="playerName"></h4>
+        <div class="mage">
+          <div class="imgGuerrier">
+            <img src="assets\img\classePlayer\mage.png" alt="" srcset="" />
           </div>
-          <div class="playerCar">
-            <img
-              src="assets/img/heart.svg"
-              alt=""
-              srcset=""
-              class="playerImg"
-            />
-            <h4 class="numberPlayerHp"></h4>
+          <h4 class="classTitle">Mage</h2>
+        </div>
+        <div class="voleur">
+          <div class="imgGuerrier">
+            <img src="assets\img\classePlayer\voleur.png" alt="" srcset="" />
           </div>
-          <div class="playerCar">
-            <img
-              src="assets/img/shield.svg"
-              alt="Image Bouclier"
-              srcset=""
-              class="playerImg"
-            />
-            <h4 class="numberPlayerShield"></h4>
-          </div>
-          <div class="playerCar">
-            <img
-              src="assets/img/flask.svg"
-              alt="Image Fiole"
-              srcset=""
-              class="playerImg"
-            />
-            <h4 class="numberPlayerMana"></h4>
-          </div>
-          <div class="playerCar">
-            <img
-              src="assets/img/ingot.svg"
-              alt="Image Gold"
-              srcset=""
-              class="playerImg"
-            />
-            <h4 class="numberPlayerGold"></h4>
-          </div>
+          <h4 class="classTitle">Voleur</h2>
         </div>
       </div>
-
-      <main>
-        <!-- AFFICHE LES CARACTERISTIQUES DU JOUEUR LORSQU'ON CLIQUE SUR SON NOM -->
-        <div class="joueurCar none" id="car">
-          <div class="playerCar">
-            <img
-              src="assets/img/heart.svg"
-              alt=""
-              srcset=""
-              class="playerImg"
-            />
-            <h4 class="numberPlayerHp"></h4>
-          </div>
-          <div class="playerCar">
-            <img
-              src="assets/img/shield.svg"
-              alt="Image Bouclier"
-              srcset=""
-              class="playerImg"
-            />
-            <h4 class="numberPlayerShield"></h4>
-          </div>
-          <div class="playerCar">
-            <img
-              src="assets/img/flask.svg"
-              alt="Image Fiole"
-              srcset=""
-              class="playerImg"
-            />
-            <h4 class="numberPlayerMana"></h4>
-          </div>
-          <div class="playerCar">
-            <img
-              src="assets/img/ingot.svg"
-              alt="Image Gold"
-              srcset=""
-              class="playerImg"
-            />
-            <h4 class="numberPlayerGold"></h4>
-          </div>
-        </div>
-        <div class="adversaire">
-          <div style="width: 100%; position: relative">
-            <h2 class="adversaireTitle">Adversaire :</h2>
-            <p id="NomAd"></p>
-            <img
-              src="https://media.giphy.com/media/3o6wrdG8vt4X86Pauc/giphy.gif"
-              alt=""
-              srcset=""
-              style="width: 100%; height: 100%"
-            />
-          </div>
-          <div style="text-align-last: center">PV ennemi</div>
-          <div id="enemyHealth"><div id="enemyHealthBar"></div></div>
-        </div>
-      </main>
     </div>
-    <footer>
-      <!-- HISTORIQUE DES ACTIONS -->
-      <div class="historique">
-        <h2>Historique</h2>
-        <div id="historique"></div>
-      </div>
-      <!-- ON CHOISIT l'ACTION DU JOUEUR -->
-      <div class="choixCombat">
-        <h2>Choix</h2>
-        <!-- NOS BOUTONS  -->
-        <div class="bouttons">
-          <button class="btn bg-red" id="atq">ATTAQUE</button>
-          <button class="btn" id="sort">SORT</button>
-          <button class="btn" id="counter">CONTRER</button>
-        </div>
-      </div>
-    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="module" src="assets/js/main.js"></script>
-  </body>
+
+    <script src="assets\js\choice.js"></script>
+</body>
 </html>

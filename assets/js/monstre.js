@@ -13,6 +13,7 @@ class Monstre {
 
 let Serpent = new Monstre("serpent", 5, 7, 6, 10, 50);
 let Tigre = new Monstre("Tigre", 10, 7, 6, 10);
+let listeMonstre = [Serpent, Tigre];
 //Afficher une liste de Monstre différent - Sofiane
 /*
 let listeMonstre = [Serpent, Tigre];

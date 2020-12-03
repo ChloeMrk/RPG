@@ -12,7 +12,9 @@ $("#Joueur").click(function (e) {
   $(".adversaire").addClass("transition");
 });
 
-let Player = new Person("Marvin", 100, 2, 7, 3, 4, 5, 6, 100);
+var choice = sessionStorage.getItem("choice");
+
+let Player = new Person("Marvin", choice);
 
 //Permet de Recharger les informations sans refresh la page - Marvin
 setInterval(() => {
@@ -20,6 +22,7 @@ setInterval(() => {
   $(".numberPlayerMana").html(Player.mana);
   $(".numberPlayerHp").html(Player.pv);
   $(".numberPlayerGold").html(Player.gold);
+  $(".numberPlayerAtk").html(Player.atk);
 }, 1);
 
 $("#sort").click(function () {
@@ -35,6 +38,8 @@ $("#NomAd").html(Monstre1.nom);
 
 ///////////////////////////////////////////////////////////////
 var monsterHpBase = Monstre1.pv;
+var playerShield = Player.defense;
+console.log(playerShield);
 var playerMove;
 var savedEnemyMove;
 var totRounds = 0;
