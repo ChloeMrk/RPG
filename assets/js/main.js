@@ -171,10 +171,11 @@ $("#counter").click(function (e) {
 //Stocker un objet
 
 var user = JSON.parse(localStorage.getItem("player", Player));
+
+//Convertir l'objet en une chaîne
 localStorage.setItem(
   "user",
   JSON.stringify({
     Player,
   })
 );
-useLocalStorage;

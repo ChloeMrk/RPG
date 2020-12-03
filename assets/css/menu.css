@@ -1,4 +1,4 @@
-/* Popup container */
+/* Div où les popup vont s'afficher */
 .popup {
   position: relative;
   display: inline-block;
@@ -7,7 +7,6 @@
   background-color: #ffebcd;
 }
 
-/* The actual popup (appears on top) */
 .popup .popuptext {
   visibility: hidden;
   background-color: #555;
@@ -33,14 +32,14 @@
   border-color: #555 transparent transparent transparent;
 }
 
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
+/* La fonction show pour afficher les popups */
 .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
 
-/* Add animation (fade in the popup) */
+/* Animation de la popup */
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -59,6 +58,7 @@
   }
 }
 
+/*Customisation de la div popup*/
 p {
   position: absolute;
   top: 0%;
