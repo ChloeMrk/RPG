@@ -131,7 +131,6 @@ function fight(id) {
   enemyMove(id);
   healthChange();
   gameOver();
-  $(".numberPlayerHp").html(Player.pv).reload();
 }
 //La loose
 function gameOver() {
@@ -153,7 +152,6 @@ window.onload = enableButtons();
 $("#atq").click(function (e) {
   e.preventDefault();
   fight("attack");
-  console.log("Attaque");
 });
 
 $("#counter").click(function (e) {
