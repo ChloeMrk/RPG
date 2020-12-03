@@ -165,3 +165,16 @@ $("#counter").click(function (e) {
 });
 
 //#endregion
+
+//Sauvegarde
+
+//Stocker un objet
+
+var user = JSON.parse(localStorage.getItem("player", Player));
+localStorage.setItem(
+  "user",
+  JSON.stringify({
+    Player,
+  })
+);
+useLocalStorage;
