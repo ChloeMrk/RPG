@@ -4,15 +4,12 @@
   display: inline-block;
   cursor: pointer;
   width: 100%;
-  bottom: 25%;
-  top: 50%;
+  background-color: #ffebcd;
 }
 
 /* The actual popup (appears on top) */
 .popup .popuptext {
   visibility: hidden;
-  width: 160px;
-  height: 70px;
   background-color: #555;
   color: #fff;
   text-align: center;
@@ -20,8 +17,7 @@
   padding: 8px 0;
   position: absolute;
   z-index: 1;
-  top: 20%;
-  left: 50%;
+
   margin-left: -80px;
 }
 
@@ -65,10 +61,37 @@
 
 p {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0%;
+  left: 40%;
+  font-size: 80px;
+  color: #ffc300;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-style: italic;
+}
+
+.welcome {
+  position: absolute;
+  left: 35%;
 }
 
 #myPopup {
-  top: 20em;
+  top: 10%;
+  z-index: 1;
+  background-image: url("../img/arcade.gif");
+  right: 75%;
+  width: 300px;
+  height: 300px;
+}
+
+#myPopup1 {
+  top: 10%;
+  left: 80%;
+  width: 200px;
+  height: 200px;
+}
+
+#myPopup2 {
+  left: 80%;
+  top: 30em;
 }
